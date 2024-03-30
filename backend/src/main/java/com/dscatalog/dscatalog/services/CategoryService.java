@@ -1,8 +1,6 @@
 package com.dscatalog.dscatalog.services;
 
-import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
@@ -21,7 +19,7 @@ import com.dscatalog.dscatalog.services.exceptions.ResourceNotFoundException;
 import jakarta.persistence.EntityNotFoundException;
 
 @Service
-public class CategoryServices {
+public class CategoryService {
 
     @Autowired
     private CategoryRepository repository;
